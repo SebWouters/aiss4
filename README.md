@@ -3,9 +3,9 @@ aiss4: suffix array via induced sorting
 
 aiss4 provides an implementation of
 
-Ge Nong, Sen Zhang and Wai Hong Chan,
-Linear Suffix Array Construction by Almost Pure Induced-Sorting,
-2009 Data Compression Conference, Snowbird, UT,
+Ge Nong, Sen Zhang and Wai Hong Chan,\
+Linear Suffix Array Construction by Almost Pure Induced-Sorting,\
+2009 Data Compression Conference, Snowbird, UT,\
 pages 193-202 (2009) [1]
 
 
@@ -30,11 +30,11 @@ Although timings for chr22.dna and etext99 of the Manzini and
 Ferragina corpus [4] are similar to sais 2.4.1, it's probably better
 to use sais [3] or libdivsufsort [5].
 
-[1] https://doi.org/10.1109/DCC.2009.42
-[2] https://zork.net/~st/jottings/sais.html
-[3] https://sites.google.com/site/yuta256/sais
-[4] http://people.unipmn.it/manzini/lightweight/corpus/
-[5] https://github.com/y-256/libdivsufsort
+[1] https://doi.org/10.1109/DCC.2009.42\
+[2] https://zork.net/~st/jottings/sais.html\
+[3] https://sites.google.com/site/yuta256/sais\
+[4] http://people.unipmn.it/manzini/lightweight/corpus/\
+[5] https://github.com/y-256/libdivsufsort\
 
 Don't forget to unzip the files in data!
 
