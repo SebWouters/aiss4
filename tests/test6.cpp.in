@@ -1,0 +1,32 @@
+/*
+    aiss4: suffix array via induced sorting
+
+    Copyright (c) 2020, Sebastian Wouters
+    All rights reserved.
+
+    This file is part of aiss4, licensed under the BSD 3-Clause License.
+    A copy of the License can be found in the file LICENSE in the root
+    folder of this project.
+*/
+
+#include "tester.hpp"
+
+
+int main()
+{
+    std::string file = "${CMAKE_SOURCE_DIR}/data/chr22.dna";
+    const int32_t size = 34553758;
+    uint8_t * orig = new uint8_t[size];
+
+    std::ifstream reader;
+    reader.open(file, std::ios::binary | std::ios::in);
+    reader.read(reinterpret_cast<char *>(orig), size);
+    reader.close();
+
+    bool success = aiss4::tester("chr22.dna (full)", orig, size, false);
+
+    delete [] orig;
+
+    return success ? 0 : 255;
+}
+
